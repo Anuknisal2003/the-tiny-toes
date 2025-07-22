@@ -1,16 +1,42 @@
-# tiny_toes_app
+#  Tiny Toes Gallery App
 
-A new Flutter project.
+A Flutter-based baby photo gallery app with user login, albums, and photo browsing functionality.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Login (with hardcoded credentials)
+- State management using `Provider`
+- Local storage with `SharedPreferences`
+- Network fetch via `http` (JSONPlaceholder)
+- User list
+- Albums per user
+- Grid photo gallery
+- Fullscreen photo viewer
+- Auto-login & logout
+- Responsive UI (Android & Web)
 
-A few resources to get you started if this is your first Flutter project:
+---
+## Login Credentials
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Username: admin
+Password: admin123
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Getting Started
+
+### Prerequisites
+
+- Flutter SDK 3.32.7
+- Dart SDK 3.8.1
+- Java 11+
+- Android Studio or VS Code
+- Git
+
+###  Clone the repo
+
+```bash
+git clone https://github.com/your-username/tiny-toes-gallery.git
+cd client
+cd apps
+cd tiny_toes_app
+flutter pub get
+flutter run
