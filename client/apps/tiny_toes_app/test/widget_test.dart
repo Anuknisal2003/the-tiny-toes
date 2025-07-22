@@ -7,15 +7,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:tiny_toes_app/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    // Build our app with initial route.
+    await tester.pumpWidget(const MyApp(initialRoute: '/login'));
 
-    // Verify that our counter starts at 0.
+    // Modify or remove below code if not using a counter
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);
 
@@ -23,7 +22,6 @@ void main() {
     await tester.tap(find.byIcon(Icons.add));
     await tester.pump();
 
-    // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
   });
